@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  min-height: 100vh;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Karla', Arial, sans-serif;
+  background-color: hsl(185, 91%, 8%);
+}
+.card {
+  flex: 1;
+  max-width: 300px;
+  padding: 23px 20px 18px;
+  border-radius: 0.5rem;
+  background-color: hsl(185, 81%, 12%);
+  box-shadow: 0 1px 5px 3px rgba(0, 0, 0, 0.15);
+}
+.card-header,
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-header .user-profile-name,
+.card-header .user-location,
+.card-header .user-biography {
+  padding: 0 10px;
+}
+.card-header .user-location,
+.card-header .user-biography,
+.card-body .social-link,
+a {
+  font-size: 14px;
+}
+.card-header .user-profile-picture {
+  max-width: 100%;
+  padding: 3px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  border: 1px solid hsl(186, 11%, 36%);
+  object-fit: cover;
+  object-position: center;
+}
+.card-header .user-location {
+  color: yellow;
+  font-weight: 400;
+  padding: 5px 10px 18px;
+}
+.card-header .user-biography {
+  padding-bottom: 4px;
+}
+.card-body .social-link,
+a {
+  color: white;
+  font-weight: 700;
+}
+.card-body .social-link {
+  min-width: 100%;
+  padding: 7px 14px;
+  margin-top: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(186, 11%, 36%);
+  transition: background-color 0.15s,
+    opacity 0.15s;
+}
+.card-body .social-link:hover {
+  opacity: 0.8;
+}
+.card-body .social-link:active {
+  opacity: 0.5;
+}
